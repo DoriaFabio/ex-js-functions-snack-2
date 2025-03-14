@@ -2,7 +2,7 @@
 //?Funzione dichiarativa
 function somma(num1, num2) {
     const add = num1 + num2;
-    console.log(add);
+    console.log("Somma con funzione dichiarativa " + add);
 }
 
 somma(5, 4);
@@ -10,7 +10,7 @@ somma(5, 4);
 //? Funzione anonima
 const somma1 = function(num1, num2) {
     const add = num1 + num2;
-    console.log(add);
+    console.log("Somma con funzione anonima " + add);
 }
 
 somma1(5, 7);
@@ -18,14 +18,14 @@ somma1(5, 7);
 //? Arrow Function
 const somma2 = (num1, num2) => {
     const add = num1 + num2;
-    console.log(add);
+    console.log("Somma con arrow function " + add);
 }
 
 somma2(4, 3);
 
 //! Snack 2
 //? Arrow Function che calcola il quadrato di un numero
-const quadrato = num1 => num1*num1;
+const quadrato = num1 => num1 ** 2;
 
 console.log(quadrato(5));
 
@@ -38,20 +38,3 @@ const eseguiOperazione = (a, b, operazione) => operazione(a, b);
 
 console.log(eseguiOperazione(3, 5, somma3));
 console.log(eseguiOperazione(3, 5, moltiplica));
-
-//! Snack 4
-//? Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".
-
-function creaTimer(prima = () => { }) {
-    prima && prima()
-    setTimeout(() => {
-        console.log("Tempo scaduto");
-    }, 5000);
-}
-creaTimer(
-    () => console.log("Timer in esecuzione")
-);
-
-//! Snack 5
-//? Crea una funzione stampaOgniSecondo con setInterval
-
