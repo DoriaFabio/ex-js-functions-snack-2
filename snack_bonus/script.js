@@ -3,7 +3,6 @@
 
 // function contoAllaRovescia(n) {
 //     let contatore = n;
-
 //     return function decrementa() {
 //         if (contatore > 0) {
 //             console.log(contatore);
@@ -12,10 +11,8 @@
 //             console.log("Tempo scaduto");
 //             clearInterval(interval);
 //         }
-
 //     };
 // }
-
 // const contatore = contoAllaRovescia(5);
 // const interval = setInterval(contatore, 1000);
 
@@ -23,14 +20,12 @@
 //? Creare una funzione che esegue una sequenza di operazioni con ritardi
 
 // function sequenzaOperazioni(operazioni, intervallo) {
-
 //     operazioni.forEach((op, index) => {
 //         setTimeout(() => {
 //             op();
 //         }, intervallo * index);
 //     });
 // }
-
 // sequenzaOperazioni([
 //     () => console.log("Operazione 1"),
 //     () => console.log("Operazione 2"),

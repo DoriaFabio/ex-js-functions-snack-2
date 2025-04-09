@@ -3,7 +3,6 @@
 
 function creaContatoreAutomatico() {
     let contatore = 0;
-
     return function incrementa() {
         contatore++;
         console.log(contatore);

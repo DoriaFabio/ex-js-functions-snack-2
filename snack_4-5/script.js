@@ -2,7 +2,7 @@
 //? Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".
 
 function creaTimer(prima = () => { }) {
-    prima && prima()
+    prima && prima() 
     return (
         setTimeout(() => {
             console.log("Tempo scaduto");
